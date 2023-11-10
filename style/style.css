@@ -36,7 +36,7 @@ label {
 }
 
 body {
-  background: url('../assets/background.png') center/cover no-repeat;
+  background: url('../assets/cool-background.png') center/cover no-repeat;
   font-family: Roboto, Oxygen, sans-serif;
   display: flex;
   justify-content: center;
@@ -48,7 +48,9 @@ body {
 
 .app {
   width: 100%;
+  /* 너비가 100%인데, 1000px 넘어가면 더이상 안커지게 */
   max-width: 1000px;
+  /* 항상 정해진 높이에 가득찰 수 있게 */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -86,6 +88,7 @@ body {
 }
 
 .document {
+  /* 전체다 차지하게! */
   height: 100%;
   overflow-y: auto;
   background-color: var(--document-bg-color);
